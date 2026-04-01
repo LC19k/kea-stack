@@ -1,4 +1,4 @@
-FROM ghcr.io/LC19k/kea-base:latest
+FROM ghcr.io/lc19k/kea-base:latest
 COPY entrypoint.dhcp4.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
