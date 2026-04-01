@@ -1,0 +1,18 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor junk
+*.swp
+*.swo
+*.idea/
+.vscode/
+
+# Docker build artifacts
+*.tar
+*.img
+*.log
+
+# Local overrides
+.env
+.env.*
