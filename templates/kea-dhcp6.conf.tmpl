@@ -1,0 +1,19 @@
+{
+  "Dhcp6": {
+    "interfaces-config": {
+      "interfaces": [ "${KEA_DHCP6_INTERFACE}" ]
+    },
+    "control-socket": {
+      "socket-type": "unix",
+      "socket-name": "/run/kea/kea6-ctrl-socket"
+    },
+    "subnet6": [
+      {
+        "subnet": "${KEA_IPV6_SUBNET}",
+        "pools": [
+          { "pool": "${KEA_IPV6_POOL}" }
+        ]
+      }
+    ]
+  }
+}
