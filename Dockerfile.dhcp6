@@ -1,0 +1,3 @@
+FROM ghcr.io/LC19k/kea-base:latest
+ENTRYPOINT ["/usr/sbin/kea-dhcp6"]
+CMD ["-c", "/etc/kea/kea-dhcp6.conf"]
