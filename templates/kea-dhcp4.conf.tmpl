@@ -1,0 +1,25 @@
+{
+  "Dhcp4": {
+    "interfaces-config": {
+      "interfaces": [ "${KEA_DHCP4_INTERFACE}" ]
+    },
+    "control-socket": {
+      "socket-type": "unix",
+      "socket-name": "/run/kea/kea4-ctrl-socket"
+    },
+    "subnet4": [
+      {
+        "subnet": "${KEA_IPV4_SUBNET}",
+        "pools": [
+          { "pool": "${KEA_IPV4_POOL}" }
+        ],
+        "option-data": [
+          {
+            "name": "routers",
+            "data": "${KEA_IPV4_ROUTER}"
+          }
+        ]
+      }
+    ]
+  }
+}
